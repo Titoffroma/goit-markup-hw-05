@@ -435,7 +435,6 @@ footer {
 }
 .portfolio-list li {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 .portfolio-list > li:not(:nth-child(3n)) {
@@ -445,8 +444,10 @@ footer {
   margin-bottom: 0px;
 }
 .portfolio-listitem {
+  display: inline-block;
   position: relative;
   overflow: hidden;
+  border: 1px solid #eeeeee;
   transition: box-shadow var(--transition-fuction);
 }
 .hover-text {
