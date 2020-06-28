@@ -307,19 +307,22 @@ section h2 {
 .our-clients-listitem {
   width: calc((100% - 30px * 5) / 6);
 }
-.our-clients-icon:hover,
-.our-clients-icon:focus {
+.our-clients-listitem a:hover,
+.our-clients-listitem a:focus {
   fill: var(--main-color);
   border-color: var(--main-color);
 }
-.our-clients-icon {
-  width: 170px;
-  height: 90px;
+.our-clients-listitem a {
+  display: inline-block;
   fill: var(--social-icon-color);
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
   transition: fill var(--transition-fuction),
     border-color var(--transition-fuction);
+}
+.our-clients-icon {
+  width: 170px;
+  height: 90px;
 }
 footer {
   background-color: #2f303a;
