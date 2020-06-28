@@ -196,19 +196,8 @@ section h2 {
   display: flex;
 }
 .what-we-do-list-item {
+  position: relative;
   width: calc((100% - 30px * 2) / 3);
-  display: flex;
-  align-items: flex-end;
-  height: 294px;
-}
-.what-we-do-list-item:nth-child(1) {
-  background: url("../img/img1.jpg") no-repeat;
-}
-.what-we-do-list-item:nth-child(2) {
-  background: url("../img/img2.jpg") no-repeat;
-}
-.what-we-do-list-item:nth-child(3) {
-  background: url("../img/img3.jpg") no-repeat;
 }
 .what-we-do-list-item:not(:last-child) {
   margin-right: 30px;
@@ -222,7 +211,9 @@ section h2 {
   text-align: center;
   line-height: 70px;
   background-color: var(--overlay-color);
-  flex-basis: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
 }
 .our-team-section {
   background-color: #f5f4fa;
