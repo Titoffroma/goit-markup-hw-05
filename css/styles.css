@@ -353,11 +353,15 @@ footer {
   color: var(--white-color);
 }
 .footer-contacts-list a {
-  color: var(--white-color);
+  color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
+  transition: color var(--transition-fuction);
+}
+.footer-contacts-list a:hover {
+  color: var(--main-color);
 }
 .footer-contacts-list li {
   color: var(--white-color);
@@ -366,9 +370,6 @@ footer {
   font-size: 14px;
   font-style: normal;
   padding-top: 17px;
-}
-.footer-contacts-list li:not(:first-child) a {
-  color: rgba(255, 255, 255, 0.6);
 }
 .footer-list-item {
   color: var(--white-color);
@@ -409,12 +410,14 @@ footer {
   padding: 0px 22px 0px;
   color: var(--title-color);
   transition: background var(--transition-fuction),
-    color var(--transition-fuction);
+    color var(--transition-fuction), box-shadow var(--transition-fuction);
 }
 .secondary-nav-listitem a:hover,
 .secondary-nav-listitem a:focus {
   background: var(--main-color);
   color: var(--white-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .portfolio {
   padding: 94px 0px 94px;
@@ -436,10 +439,13 @@ footer {
 }
 .portfolio-listitem {
   display: inline-block;
-  position: relative;
   overflow: hidden;
   border: 1px solid #eeeeee;
   transition: box-shadow var(--transition-fuction);
+}
+.portfolio-listitem > div:first-child {
+  position: relative;
+  visibility: hidden;
 }
 .hover-text {
   background: rgba(33, 150, 243, 0.9);
@@ -454,6 +460,7 @@ footer {
   position: absolute;
   z-index: 0;
   transition: top var(--transition-fuction);
+  visibility: visible;
 }
 .portfolio-listitem:hover,
 .portfolio-listitem:focus {
@@ -487,4 +494,5 @@ footer {
 }
 .portfolio-listitem img {
   width: 100%;
+  visibility: visible;
 }
