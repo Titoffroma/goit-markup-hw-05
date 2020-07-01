@@ -261,7 +261,25 @@
             </ul>
           </div>
           <div>
-            <p class="footer-list-item">Подпишитесь на рассылку</p>
+            <form action="" method="get">
+              <label class="footer-list-item" for="roma"
+                >Подпишитесь на рассылку</label
+              >
+              <div class="input-group">
+                <input
+                  id="mail-input"
+                  name="Emailinput"
+                  type="mail"
+                  placeholder="Email"
+                />
+                <button class="submit-button" type="submit">
+                  <span>Подписаться</span>
+                  <svg class="send-icon">
+                    <use href="./img/sprite.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
